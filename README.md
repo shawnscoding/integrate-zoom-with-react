@@ -26,10 +26,11 @@ npm start
 
 I created this project to help those having a hard time to integrate Zoom sdk in reatjs like I did.
 
-## Warning
+## Note
 
-1. Please do not change any version of the dependencies in package.json as it might break the app.
-2. I have added comments to zoomConfig object to prevent confusion. I hope this is helpful.
+1. There are two css fils in public folder which is dynamically imported into <header> tag depends on the form submission.
+2. Please do not change any version of the dependencies in package.json as it might break the app.
+3. I have added comments to zoomConfig object to prevent confusion. I hope this is helpful.
 
 ```js
 const zoomConfig = {
