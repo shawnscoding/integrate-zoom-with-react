@@ -1,0 +1,54 @@
+{
+  "name": "zoom-integration-with-reactjs",
+  "version": "1.0.0",
+  "author": "shawnscoding",
+  "license": "MIT",
+  "keywords": [
+    "React",
+    "zoom sdk",
+    "zoom integration with reactjs",
+    "zoom sdk in react js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnscoding/reactjs-crontab"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@zoomus/websdk": "^1.8.1",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.14",
+    "query-string": "^6.13.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0",
+    "styled-components": "^5.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
