@@ -7,8 +7,7 @@
 /.pnp
 .pnp.js
 
-# zoom
-.env
+
 
 # testing
 /coverage

@@ -1,6 +1,6 @@
-### For running and testing :
+### For running and testing:
 
-Please add API KEY and API SECRET KEY in `.env` file
+Add API KEY and API SECRET KEY in `.env` file
 
 ```
 REACT_APP_ZOOM_API_KEY=YOUR_ZOOM_API_KEY
@@ -24,12 +24,12 @@ npm start
 
 ## Motivation
 
-I created this project to help those having difficult time to integrate Zoom sdk in reatjs like I did.
+I created this project to help those having a hard time to integrate Zoom sdk in reatjs like I did.
 
-## warning
+## Warning
 
 1. Please do not change any version of the dependencies in package.json as it might break the app.
-2. I have added comments to config object to prevent confusion. I hope this is helpful.
+2. I have added comments to zoomConfig object to prevent confusion. I hope this is helpful.
 
 ```js
 const zoomConfig = {
