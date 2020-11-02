@@ -9,7 +9,6 @@ const joinMeeting = (signature, meetConfig) => {
     isSupportAV: true,
     success: function (success) {
       console.log("Init Success ", success);
-      console.log("meetConfig : ", meetConfig);
       ZoomMtg.join({
         meetingNumber: meetConfig.meetingNumber,
         userName: meetConfig.userName,
@@ -31,13 +30,10 @@ const joinMeeting = (signature, meetConfig) => {
 
 const Zoom = ({meetConfig, isSubmitted}) => {
 
-  console.log("meetConfig::", meetConfig)
-  console.log("isSubmitted::", isSubmitted)
   useEffect(() => {
     if(isSubmitted.status) {
       // setZoomJSLib version 1.8.1 caused breaking, must be same as installed package verision
       // installing this of version 1.7.x caused breaking
-      console.log("called")
       ZoomMtg.setZoomJSLib("https://source.zoom.us/1.8.1/lib", "/av");
       ZoomMtg.preLoadWasm();
       ZoomMtg.prepareJssdk();

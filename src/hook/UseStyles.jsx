@@ -10,8 +10,8 @@ const useStyles = ( stylePath ) => {
 
   useEffect(() => {
       console.log("stlye path ::", stylePath)
-    var head = document.head;
-    var link = document.createElement("link");
+    const head = document.head;
+    const link = document.createElement("link");
 
     link.type = "text/css";
     link.rel = "stylesheet";

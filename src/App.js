@@ -46,7 +46,6 @@ const App = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log("called");
     e.preventDefault();
     if (!userName.length) return;
 
