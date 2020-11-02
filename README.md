@@ -1,17 +1,51 @@
-### 시작 및 기능 테스트 하기 위해서 :
+### For running and testing :
 
-`.env` 파일에 API KEY 와 API SECRENT KEY 를 추가 하십시오.
+Please add API KEY and API SECRET KEY in `.env` file
 
 ```
 REACT_APP_ZOOM_API_KEY=YOUR_ZOOM_API_KEY
 REACT_APP_ZOOM_API_SECRET_KEY=YOUR_ZOOM_SECRET_KEY
 ```
 
-주의사항
+AND
 
-1. react 버전과 @zoomus/websdk 버전이 호환이 안되는 경우가 많습니다. 그 외에도 loadash, react-redux, redux-thunk, jquery등 Zoom SDK에서 사용하는 third party 라이브러리들도 버전에 따라 호환이 안되는 경우가 허다했습니다.
-   따라서 documentation 과 https://marketplace.zoom.us/docs/sdk/native-sdks/introduction
-   forum https://devforum.zoom.us/ 을 정밀하게 검토해야합니다.
+```bash
+npm install
+npm start
+```
 
-2. 오디오, 사운드, 카메라, 로그인, 화상채팅 테스트 완료했습니다. 하지만 약간의 버그가 있습니다.
-   -1 마이크와 스피커가 즉시 활성화 되지 않는 경우가 있어서, refresh 를 해야했습니다.
+## Documentation
+
+[Zoom Documentation](https://marketplace.zoom.us/docs/sdk/native-sdks/introduction)
+
+## Zoom Forum
+
+[Zoom Forum](https://devforum.zoom.us/)
+
+## Motivation
+
+I created this project to help those having difficult time to integrate Zoom sdk in reatjs like I did.
+
+## warning
+
+1. Please do not change any version of the dependencies in package.json as it might break the app.
+2. I have added comments to config object to prevent confusion. I hope this is helpful.
+
+```js
+const zoomConfig = {
+  apiKey: API_KEYS.apiKey, // can create from here https://marketplace.zoom.us/
+  apiSecret: API_KEYS.apiSecret, // can create from here https://marketplace.zoom.us/
+  meetingNumber: "",
+  // meeting id generated when schedule a meeting in https://zoom.us/meeting/schedule
+  // !!warning
+  // meetingNumber must not have white space between numbers
+  // 518 306 2219 - bad format
+  // 5183062219 - good format
+  leaveUrl: "https://zoom.us/",
+  userName: "", // (required)
+  userEmail: "", // (optional) must be the attendee email address
+  passWord: "",
+  // !!warning, this is the passcode for meeting room, not for user password
+  role: 0, // 0 for guest, 1 for host
+};
+```
