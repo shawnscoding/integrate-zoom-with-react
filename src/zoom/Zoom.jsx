@@ -28,10 +28,9 @@ const joinMeeting = (signature, meetConfig) => {
   });
 }
 
-const Zoom = ({meetConfig, isSubmitted}) => {
+const Zoom = ({meetConfig}) => {
 
   useEffect(() => {
-    if(isSubmitted.status) {
       // setZoomJSLib version 1.8.1 caused breaking, must be same as installed package verision
       // installing this of version 1.7.x caused breaking
       ZoomMtg.setZoomJSLib("https://source.zoom.us/1.8.1/lib", "/av");
@@ -57,9 +56,8 @@ const Zoom = ({meetConfig, isSubmitted}) => {
           }, 1000);
         },
       });
-    }
 
-  }, [meetConfig, isSubmitted]);
+  }, [meetConfig]);
 
   return <></>;
 }

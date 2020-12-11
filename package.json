@@ -1,5 +1,5 @@
 {
-  "name": "zoom-integration-with-reactjs",
+  "name": "integrate-zoom-with-react",
   "version": "1.0.0",
   "author": "shawnscoding",
   "license": "MIT",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shawnscoding/reactjs-crontab"
+    "url": "https://github.com/shawnscoding/integrate-zoom-with-react"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
