@@ -24,15 +24,12 @@ npm start
 
 ## Motivation
 
-I created this project to help those having a hard time to integrate Zoom sdk in reatjs like I did.
-Also, I thought it would be nice to have the inputs for userName and userEmail fields of zoom config object.
-As in many cases, these values should be filled in by meeting guests
+I created this project to help those having hard time in integrating Zoom sdk in reatjs like I did.
 
 ## Note
 
-1. There are two css fils in public folder which is dynamically imported into <header> tag depends on the form submission.
-2. Please do not change any version of the dependencies in package.json as it might break the app.
-3. I have added comments to zoomConfig object to prevent confusion. I hope this is helpful.
+1. Please do not change any version of the dependencies in package.json as it might break the app.
+2. I have added comments to zoomConfig object to prevent confusion.
 
 ```js
 const zoomConfig = {
